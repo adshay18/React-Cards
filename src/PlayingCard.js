@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import backOfCard from './back.png';
 import useFlip from './hooks/useFlip';
 import './PlayingCard.css';

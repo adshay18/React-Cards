@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import useFlip from './hooks/useFlip';
 import './PokemonCard.css';
 
