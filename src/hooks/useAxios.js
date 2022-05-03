@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import axios from 'axios';
 
-const useAxios = (baseURL, specifier) => {
+const useAxios = (baseURL) => {
 	const [ data, setData ] = useState([]);
 
-	const getData = async () => {
+	const getData = async (name = '') => {
 		try {
-			const response = await axios.get(`${baseURL}${specifier ? specifier + '/' : ''}`);
+			const response = await axios.get(`${baseURL}${name ? name + '/' : ''}`);
 			setData((data) => [ ...data, response.data ]);
 		} catch (err) {
 			console.log(err);
