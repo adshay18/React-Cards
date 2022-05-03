@@ -16,9 +16,9 @@ function PokeDex() {
 				<PokemonSelect add={addPokemon} />
 			</div>
 			<div className="PokeDex-card-area">
-				{pokemon.map((cardData) => (
+				{pokemon.map((cardData, idx) => (
 					<PokemonCard
-						key={cardData.id}
+						key={idx}
 						front={cardData.sprites.front_default}
 						back={cardData.sprites.back_default}
 						name={cardData.name}
